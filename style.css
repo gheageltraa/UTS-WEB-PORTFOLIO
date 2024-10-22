@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d1abab;
+    background-image: url('img/g (4).jpg');
+    background-size: cover; /* Untuk menyesuaikan ukuran gambar sesuai dengan layar */
+    background-position: center; /* Untuk memastikan gambar berada di tengah */
+    background-attachment: fixed; /* Agar background tidak bergerak saat halaman discroll */
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+
+/* Header */
+header {
+    background: linear-gradient(45deg, #282d3d, #5577dd);
+    background-image: url('img/g (4).jpg');
+    background-size: cover; /* Untuk memastikan gambar menutupi seluruh header */
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header marquee {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+header .cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #445aa1;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+header .cta:hover {
+    background-color: #f9f9f9;
+    color: #5577dd;
+}
+
+/* Navigation */
+nav {
+    position: sticky; /* Menjadikan navbar sticky */
+    top: 0; /* Navbar akan tetap berada 0px dari atas saat di-scroll */
+    z-index: 1000; /* Agar navbar berada di atas elemen lainnya saat di-scroll */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+
+/* Section Layout */
+section {
+    padding: 40px 20px;
+    background-color: white;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Biodata Section */
+#biodata p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Gallery Layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.photo-frame {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    background: #fff;
+}
+
+.photo-frame img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.photo-frame p {
+    margin: 10px 0;
+}
+
+.photo-frame:hover {
+    transform: scale(1.05);
+}
+
+
+/* Form Section */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Contact Section */
+#contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#contact ul li {
+    margin-bottom: 10px;
+}
+
+#contact ul li a {
+    font-size: 1.4em;
+    color: #445aa1;
+    text-decoration: none;
+    padding: 8px;
+    transition: 0.3s;
+}
+
+#contact ul li a:hover {
+    color: #5577dd;
+    text-shadow: 1px 1px 5px #aaa;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    font-size: 1em;
+}
